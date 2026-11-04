@@ -1,0 +1,120 @@
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.error,
+.danger {
+  color: #d33;
+}
+
+.campaigns {
+  list-style: none;
+  padding: 0;
+}
+
+.campaigns li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #8884;
+}
+
+.campaigns .open {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 8px;
+  border: none;
+  background: none;
+  font: inherit;
+  text-align: left;
+}
+
+.campaigns .open:hover {
+  background: #8882;
+}
+
+.meta {
+  opacity: 0.7;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px 24px;
+}
+
+dt {
+  font-weight: 600;
+}
+
+dd {
+  margin: 0;
+}
+
+dialog form {
+  display: grid;
+  gap: 12px;
+  width: min(400px, 80vw);
+}
+
+label,
+.field {
+  display: grid;
+  gap: 4px;
+}
+
+.row,
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.row input {
+  flex: 1;
+}
+
+.actions {
+  justify-content: flex-end;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chips li {
+  padding: 2px 4px 2px 8px;
+  border: 1px solid #8886;
+  border-radius: 12px;
+}
+
+.chips button {
+  border: none;
+  background: none;
+}
